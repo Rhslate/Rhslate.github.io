@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Rachel Kirker</title>
+        <link rel="stylesheet" type="text/css" href="Portfolio Website Assignment.css">
+        
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!-- Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Rachel Kirker's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.</q>
+                    <br> -Og Mandino
+                    <br>
+                    <br> 
+                    <br>
+                    <br> Thank you for taking the time to look at my work
+                </p>
+            </strong>
+        </div>
+
+<!-- Slideshow section -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="slides">
+            <!-- Slide 1 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="Rachel.jpg" alt="Rachel Kirker">
+                <div class="text">Let's collaborate!</div>
+            </div>
+            <!-- Slide 2 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="html.png"> 
+                <div class="text">I am a front end web developer,<br> trained in:<br>HTML, CSS, and JavaScript</div>
+            </div>
+      
+            <!-- Slide 3 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="CSS.png"> 
+                <div class="text">CSS</div>
+            </div>
+            <!-- Slide 4 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="JavaScript.png"> 
+                <div class="text">JavaScript</div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+    </div>
+    <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+</div>
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="mountains.jpg" alt="Snow capped mountains">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a student at the Tech Academy, studing full-stack web development and Cyber Security. 
+                    <br>
+                    <br>I will graduate from the Tech Academy this Winter, and I am beyond excited! <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> will have trained me in these programming languages: HTML, CSS, JavaScript, Ruby, and others. 
+            
+                    <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    <center>You can view my coding projects on my GitHub profile here:</center>
+                    <br>
+                    <p class="center"><a href="https://github.com/Rhslate" target="_blank">Rachel Kirker's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/Rhslate" target="_blank"><img src="Scotland.jpg" alt="Scotland"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="foggytrees.jpg" alt="Foggy trees">
+            </div>
+
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <center><h1>Contact</h1></center>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+        <script src="Portfolio Website Assignment.js"></script>
+    </body>
+</html>
