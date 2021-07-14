@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width" />
         <title>Rachel Kirker</title>
         <link rel="stylesheet" type="text/css" href="Portfolio Website Assignment.css">
+        
     </head>
 
     <!--Body-->
@@ -15,6 +16,7 @@
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
+            <a href="#Slideshow">Slideshow</a>
             <a href="#GitHub">GitHub</a>
             <a href="#Contact">Contact</a>
         </div>
@@ -27,7 +29,7 @@
                 Your browser does not support HTML5 video.
             </video>
         </div>
-
+        
         <!--Video text-->
         <div class="Video_Text">
             <h1 class="white-text">Rachel Kirker's Portfolio</h1>
@@ -43,6 +45,46 @@
             </strong>
         </div>
 
+<!-- Slideshow section -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="slides">
+            <!-- Slide 1 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="Rachel.jpg" alt="Rachel Kirker">
+                <div class="text">Let's collaborate!</div>
+            </div>
+            <!-- Slide 2 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="html.png"> 
+                <div class="text">I am a front end web developer,<br> trained in:<br>HTML, CSS, and JavaScript</div>
+            </div>
+      
+            <!-- Slide 3 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="CSS.png"> 
+                <div class="text">CSS</div>
+            </div>
+            <!-- Slide 4 of 4 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="JavaScript.png"> 
+                <div class="text">JavaScript</div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+    </div>
+    <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+</div>
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -53,14 +95,10 @@
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a student at the Tech Academy, studying full-stack web development and Cyber Security. 
-                    <br>
-                    <br>
+                    I am a student at the Tech Academy, studing full-stack web development and Cyber Security. 
                     <br>
                     <br>I will graduate from the Tech Academy this Winter, and I am beyond excited! <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> will have trained me in these programming languages: HTML, CSS, JavaScript, Ruby, and others. 
-                    <br>
-                    <br>
-                    <br>
+            
                     <a href="#Contact">Contact</a> me below!
                 </p>
             </div>
@@ -89,9 +127,10 @@
             <div class="Column_2 Column_tall">
                 <img src="foggytrees.jpg" alt="Foggy trees">
             </div>
+
             <!--Contact form, right column-->
             <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
+                <center><h1>Contact</h1></center>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
@@ -112,5 +151,6 @@
                 <br>
             </p>
         </footer>
+        <script src="Portfolio Website Assignment.js"></script>
     </body>
 </html>
